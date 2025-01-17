@@ -1,0 +1,29 @@
+{{define "pages/index"}}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Compare Open Api Definitions">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.orange.min.css">
+    <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+    <title>Open Api Diff</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Open Api Compare</h1>
+        <form hx-post="/compare" hx-target="#result" hx-swap="outerHTML show:top">
+            <fieldset class="grid">
+                <textarea name="oldApiSpec" rows="20"></textarea>
+                <textarea name="newApiSpec" rows="20"></textarea>
+            </fieldset>
+            <button type="submit">Compare</button>
+        </form>
+        <section id="result"></section>
+    </main>
+</body>
+
+</html>
+{{end}}
