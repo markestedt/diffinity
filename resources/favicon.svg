@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <!-- Background -->
+    <rect width="32" height="32" rx="4" fill="#1A1B1E"/>
+    
+    <!-- Left shape -->
+    <path d="M8 8 L16 8 L16 24 L8 24 L8 8" 
+          fill="#2196F3" 
+          opacity="0.9"/>
+    
+    <!-- Right shape -->
+    <path d="M16 12 L24 12 L24 28 L16 28 L16 12" 
+          fill="#4CAF50" 
+          opacity="0.9"/>
+    
+    <!-- Intersection highlight -->
+    <path d="M16 12 L16 24 L16 24 L16 12" 
+          fill="#FFFFFF" 
+          opacity="0.5"/>
+</svg>

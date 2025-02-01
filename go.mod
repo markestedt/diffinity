@@ -1,4 +1,4 @@
-module github.com/markestedt/openapidiff
+module github.com/markestedt/diffinity
 
 go 1.23.1
 

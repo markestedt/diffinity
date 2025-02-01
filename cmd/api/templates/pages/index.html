@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Compare Open Api Definitions">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.orange.min.css">
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3C!-- Background --%3E%3Crect width="32" height="32" rx="4" fill="%231A1B1E"/%3E%3C!-- Left shape --%3E%3Cpath d="M8 8 L16 8 L16 24 L8 24 L8 8" fill="%232196F3" opacity="0.9"/%3E%3C!-- Right shape --%3E%3Cpath d="M16 12 L24 12 L24 28 L16 28 L16 12" fill="%234CAF50" opacity="0.9"/%3E%3C!-- Intersection highlight --%3E%3Cpath d="M16 12 L16 24 L16 24 L16 12" fill="%23FFFFFF" opacity="0.5"/%3E%3C/svg%3E'/>
     <script src="https://unpkg.com/htmx.org@2.0.2"></script>
-    <title>Open Api Diff</title>
+    <title>Diffinity</title>
+    <style>
+        textarea {
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
 
 <body>
     <main class="container">
-        <h1>Open Api Compare</h1>
+        <hgroup>
+        <h1>Diffinity</h1>
+        <p>See what’s changed in your OpenAPI specs instantly. Diffinity makes API version tracking effortless.</p>
+    </hgroup>
         <form hx-post="/compare" hx-target="#result" hx-swap="outerHTML show:top">
             <fieldset class="grid">
                 <textarea name="oldApiSpec" rows="20"></textarea>
@@ -23,6 +32,8 @@
         </form>
         <section id="result"></section>
     </main>
+
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "607c2c3fa9744fe6b4da41d1f008fdd6"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 
 </html>

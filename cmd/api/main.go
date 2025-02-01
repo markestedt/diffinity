@@ -28,7 +28,7 @@ func main() {
 	mux.HandleFunc("GET /", app.getIndexHandler)
 	mux.HandleFunc("POST /compare", app.postCompareHandler)
 
-	err := http.ListenAndServe(":9595", mux)
+	err := http.ListenAndServe(":9494", mux)
 	if errors.Is(err, http.ErrServerClosed) {
 		log.Fatalf("server closed\n")
 	} else if err != nil {
